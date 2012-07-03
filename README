@@ -53,3 +53,35 @@ by the Free Software Foundation; or the Artistic License.
 
 See http://dev.perl.org/licenses/ for more information.
 
+SAMPLE CONFIG
+
+Policy:
+---
+default:
+  epoch: 2001-12-3
+  queue:
+  - lead1
+  - lead2
+
+day:
+  timezone: Asia/Shanghai
+  period: 07:00 ~ 19:00
+  epoch: 2012-01-12
+  queue:
+  - admin1
+  - admin2
+  - admin3
+  - admin4
+  redirect:
+    3: default:3
+
+override:
+---
+day:2:
+  - replace: admin8,admin9
+    timezone: Asia/Shanghai
+
+lead1:
+  - insert: admin7,lead3
+    timezone: Asia/Shanghai
+    period: 2012-07-03 ~ 2012-07-05 & 9:00 ~ 14:00

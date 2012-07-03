@@ -13,8 +13,8 @@ use DateTime;
 use YAML::XS;
 
 use DynGig::Range::String;
-use DynGig::Schedule:Policy;
-use DynGig::Schedule:Override;
+use DynGig::Schedule::Policy;
+use DynGig::Schedule::Override;
 
 use constant { DEFAULT => 'default', DAY => 86400 };
 

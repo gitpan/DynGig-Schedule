@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               DynGig-Schedule
-version:            0.01
+version:            0.02
 abstract:           Scheduling tool based on DynGig::Range::Time
 author:
     - Kan Liu <kan@cpan.org>
